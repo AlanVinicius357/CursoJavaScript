@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro comando...</title>
+    <style>
+        body{
+            background-color: rgb(189, 135, 66);
+        }
+        h1{
+            color: chartreuse;
+            font: normal 25pt arial;
+        }
+        p{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número')) // = string
+        var n2 = Number.parseFloat(window.prompt('Digite outro número')) // = string
+
+
+        var s = n1 + n2 // deve-se converter para number usando parseFloat ou parseInt
+
+
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        // + adição  (number + number)
+        // + concatenação (string + string)
+
+    </script>
+</body>
+</html>

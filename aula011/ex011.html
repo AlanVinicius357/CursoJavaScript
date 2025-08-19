@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste nacionalidade</title>
+</head>
+<body>
+    <h1>Identificação de nacionalidade</h1>
+    
+    Digite sua nacionalidade: <input type="text" name="nacionalidade" id="nacionalidade"> 
+    <input type="button" value="verificar" onclick="verificar()">
+
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var nacao = window.document.querySelector('input#nacionalidade')
+            var res = window.document.querySelector('div#res')
+            if (nacao.value == 'Brasil') {
+            res.innerText = `Você é brasileiro`
+        }
+        else{
+            res.innerText = `Você é estrangeiro`
+        }
+       
+    }
+       
+    </script>
+</body>
+</html>
